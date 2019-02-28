@@ -12,7 +12,7 @@ public class Application {
     @RequestMapping("/")
     public String home() {
         String hostName=System.getenv("HOSTNAME");
-        return "Hello from Spring Boot S2I from "+hostName;
+        return "Hello from Spring Boot S2I from HOSTNAME= "+hostName;
     }
 
     public static void main(String[] args) {
